@@ -11,7 +11,7 @@ public class StudentServiceImpl implements IStudentService {
     @Autowired
     private StudentMapper studentMapper;
 
-    public Student getStudentByUserName(String username) {
-        return studentMapper.getStudentByUserName(username);
+    public Student getStudentByName(String name) {
+        return studentMapper.getStudentByName(name);
     }
 }

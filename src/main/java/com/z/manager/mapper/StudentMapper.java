@@ -4,5 +4,5 @@ import com.z.manager.dao.IBaseDao;
 import com.z.manager.entity.Student;
 
 public interface StudentMapper extends IBaseDao<Student> {
-    Student getStudentByUserName(String username);
+    Student getStudentByName(String name);
 }

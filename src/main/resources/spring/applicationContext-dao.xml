@@ -44,7 +44,7 @@
                 <value>classpath:com/z/manager/mapper/*.xml</value>
             </array>
         </property>
-        <property name="typeAliasesPackage" value="com.qf.oa.entity"/>
+        <property name="typeAliasesPackage" value="com.z.manager.entity"/>
     </bean>
 
     <!-- 3.管理这些Mapper -->

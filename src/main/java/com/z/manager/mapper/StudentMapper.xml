@@ -4,4 +4,7 @@
     <insert id="add" parameterType="student">
 
     </insert>
+    <select id="getStudentByName" parameterType="string" resultType="student">
+        select * from student where name=#{name} and flag=1
+    </select>
 </mapper>

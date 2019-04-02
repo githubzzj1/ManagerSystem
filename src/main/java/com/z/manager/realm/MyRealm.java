@@ -22,7 +22,7 @@ public class MyRealm extends AuthorizingRealm {
         UsernamePasswordToken token= (UsernamePasswordToken) authenticationToken;
         String username=token.getUsername();
         if(username!=null&&username!=""){
-            Student student=studentService.getStudentByUserName(username);
+            Student student=studentService.getStudentByName(username);
             if(student!=null){
                 ByteSource byteSource=ByteSource.Util.bytes(username);
                 return new SimpleAuthenticationInfo(student,student.getPassword(),byteSource,this.getName());

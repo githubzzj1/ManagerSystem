@@ -9,9 +9,9 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
-    <base href="<%=request.getContextPath()+"/"%>">
-    <title>Title</title>
-    <script type="text/javascript" src="/application/jquery/1.9.1/jquery.js"></script>
+    <base href="<%=request.getContextPath()+'/'%>">
+    <title>用户登录</title>
+    <script type="text/javascript" src="application/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript">
         $(function(){
             alert(1);
@@ -29,8 +29,8 @@
     </script>
 </head>
 <body>
-    <form method="post" action="">
-        用户名称：<input type="text" name="username"><br>
+    <form method="post" action="" onsubmit="sub()">
+        用户名称：<input type="text" name="name"><br>
         用户密码：<input type="text" name="password"><br>
         <input type="checkbox" class="role" value="student">学生
         <input type="checkbox" class="role" value="teacher">老师

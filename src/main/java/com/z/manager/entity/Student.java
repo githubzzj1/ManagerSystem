@@ -4,10 +4,12 @@ import java.util.Date;
 
 public class Student {
     private int id;
-    private String username;
+    private String name;
     private String password;
     private int age;
     private Date birthday;
+    private boolean flag;
+    private int type;
 
     public int getId() {
         return id;
@@ -17,12 +19,12 @@ public class Student {
         this.id = id;
     }
 
-    public String getUsername() {
-        return username;
+    public String getName() {
+        return name;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getPassword() {
@@ -47,5 +49,21 @@ public class Student {
 
     public void setBirthday(Date birthday) {
         this.birthday = birthday;
+    }
+
+    public boolean isFlag() {
+        return flag;
+    }
+
+    public void setFlag(boolean flag) {
+        this.flag = flag;
+    }
+
+    public int getType() {
+        return type;
+    }
+
+    public void setType(int type) {
+        this.type = type;
     }
 }
